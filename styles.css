@@ -7,18 +7,17 @@ html {
     font-family: 'Courier New', Courier, monospace;
     height: 100%;
     margin: 0;
-    perspective: 800px;
 }
 
 nav {
     background-color: black;
-    padding: 40px;
+    padding: 20px;
     margin-bottom: 50px;
 }
 
 ul {
     margin: 0;
-    padding: 20;
+    padding: 0;
     text-align: center;
     text-decoration: none;
 }
@@ -26,6 +25,7 @@ ul {
 li {
     color: #FFF;
     display: inline;
+    line-height: 32px;
     padding: 20px;
     text-transform: uppercase;
 }
@@ -110,4 +110,41 @@ section {
 
 .cube.bottom {
     transform: rotateX(90deg);
+}
+
+@media screen and (max-width: 480px) {
+    .cube {
+        height: 200px;
+        width: 200px;
+    }
+
+    .face {
+        height: 200px;
+        width: 200px;
+    }
+
+    /* cube transforms */
+    .face.front {
+        transform: translateZ(100px);
+    }
+
+    .face.back {
+        transform: rotateX(180deg) translateZ(100px);
+    }
+
+    .face.top {
+        transform: rotateX(90deg) translateZ(100px);
+    }
+
+    .face.bottom {
+        transform: rotateX(-90deg) translateZ(100px);
+    }
+
+    .face.right {
+        transform: rotateY(90deg) translateZ(100px);
+    }
+
+    .face.left {
+        transform: rotateY(-90deg) translateZ(100px);
+    }
 }
