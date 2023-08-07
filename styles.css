@@ -24,6 +24,7 @@ ul {
 
 li {
     color: #FFF;
+    cursor: pointer;
     display: inline;
     line-height: 32px;
     padding: 20px;
@@ -114,37 +115,37 @@ section {
 
 @media screen and (max-width: 480px) {
     .cube {
-        height: 200px;
-        width: 200px;
+        height: 250px;
+        width: 250px;
     }
 
     .face {
-        height: 200px;
-        width: 200px;
+        height: 250px;
+        width: 250px;
     }
 
     /* cube transforms */
     .face.front {
-        transform: translateZ(100px);
+        transform: translateZ(125px);
     }
 
     .face.back {
-        transform: rotateX(180deg) translateZ(100px);
+        transform: rotateX(180deg) translateZ(125px);
     }
 
     .face.top {
-        transform: rotateX(90deg) translateZ(100px);
+        transform: rotateX(90deg) translateZ(125px);
     }
 
     .face.bottom {
-        transform: rotateX(-90deg) translateZ(100px);
+        transform: rotateX(-90deg) translateZ(125px);
     }
 
     .face.right {
-        transform: rotateY(90deg) translateZ(100px);
+        transform: rotateY(90deg) translateZ(125px);
     }
 
     .face.left {
-        transform: rotateY(-90deg) translateZ(100px);
+        transform: rotateY(-90deg) translateZ(125px);
     }
 }
